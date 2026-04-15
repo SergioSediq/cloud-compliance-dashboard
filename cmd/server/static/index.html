@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Compliance</title>
+    <link rel="stylesheet" href="/app.css" />
+  </head>
+  <body>
+    <h1>Posture</h1>
+    <p class="lead">
+      CIS-style checks with framework tags. Drift = observed ≠ expected on the
+      fixture dataset.
+    </p>
+
+    <div class="toolbar">
+      <label for="tag-filter">Filter by tag</label>
+      <input id="tag-filter" list="tag-suggestions" placeholder="e.g. CIS" />
+      <datalist id="tag-suggestions">
+        <option value="CIS"></option>
+        <option value="SOC2_CC6"></option>
+        <option value="HIPAA_164.312.a.1"></option>
+      </datalist>
+      <button type="button" id="reload">Apply</button>
+      <a id="export-csv" class="button-link" href="/api/v1/export/checks.csv">Download CSV</a>
+    </div>
+
+    <div class="tiles" id="summary"></div>
+
+    <h2>Framework coverage</h2>
+    <p id="frameworks" class="tag-row"></p>
+
+    <h2>Controls</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Title</th>
+          <th>Expected</th>
+          <th>Observed</th>
+          <th>Tags</th>
+        </tr>
+      </thead>
+      <tbody id="rows"></tbody>
+    </table>
+
+    <h2>Drift</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Change</th>
+          <th>Resource</th>
+        </tr>
+      </thead>
+      <tbody id="drift"></tbody>
+    </table>
+
+    <p class="note">
+      Not an audit. Tags are shorthand for discussion, not certification.
+    </p>
+
+    <script src="/app.js"></script>
+  </body>
+</html>

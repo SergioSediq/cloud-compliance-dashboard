@@ -1,0 +1,118 @@
+:root {
+  font-family: ui-sans-serif, system-ui, sans-serif;
+  background: #0f1419;
+  color: #e7ecf3;
+  line-height: 1.45;
+}
+body {
+  margin: 0 auto;
+  max-width: 1040px;
+  padding: 1.75rem 1rem 3rem;
+}
+h1 {
+  font-size: 1.45rem;
+  font-weight: 650;
+  letter-spacing: -0.02em;
+  margin: 0 0 0.35rem;
+}
+.lead {
+  color: #8b98a8;
+  font-size: 0.92rem;
+  margin: 0 0 1.75rem;
+}
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 0.75rem;
+  align-items: center;
+  margin-bottom: 1.25rem;
+  font-size: 0.88rem;
+}
+.toolbar input {
+  background: #1a222d;
+  border: 1px solid #2a3542;
+  border-radius: 6px;
+  color: #e7ecf3;
+  padding: 0.35rem 0.5rem;
+  min-width: 200px;
+}
+.toolbar button {
+  background: #243040;
+  border: 1px solid #2a3542;
+  border-radius: 6px;
+  color: #e7ecf3;
+  padding: 0.35rem 0.65rem;
+  cursor: pointer;
+}
+.button-link {
+  display: inline-block;
+  background: #1e2a38;
+  border: 1px solid #2a3542;
+  border-radius: 6px;
+  color: #9ed0ff;
+  padding: 0.35rem 0.65rem;
+  text-decoration: none;
+  font-size: 0.88rem;
+}
+.tag-row {
+  margin: 0 0 1.25rem;
+  font-size: 0.82rem;
+}
+.muted {
+  color: #6b7785;
+}
+code {
+  font-size: 0.85em;
+}
+.tiles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 0.85rem;
+  margin-bottom: 2rem;
+}
+.tile {
+  background: #1a222d;
+  border: 1px solid #2a3542;
+  border-radius: 8px;
+  padding: 0.9rem 1rem;
+}
+.tile b {
+  font-size: 1.35rem;
+  display: block;
+  font-weight: 650;
+}
+.pass {
+  color: #5ee4a0;
+}
+.fail {
+  color: #ff7b7b;
+}
+h2 {
+  font-size: 1.05rem;
+  margin: 1.75rem 0 0.65rem;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.88rem;
+}
+th,
+td {
+  text-align: left;
+  padding: 0.45rem 0.35rem;
+  border-bottom: 1px solid #2a3542;
+  vertical-align: top;
+}
+.tag {
+  display: inline-block;
+  background: #243040;
+  border-radius: 4px;
+  padding: 0.08rem 0.32rem;
+  margin: 0.12rem;
+  font-size: 0.72rem;
+}
+.note {
+  margin-top: 2.25rem;
+  font-size: 0.82rem;
+  color: #6b7785;
+}

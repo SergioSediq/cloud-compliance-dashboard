@@ -1,0 +1,29 @@
+[
+  {
+    "id": "cis-1.1",
+    "title": "Ensure MFA is enabled for all IAM users (example)",
+    "category": "Identity",
+    "framework_tags": ["CIS", "SOC2_CC6", "HIPAA_164.312.a.1"],
+    "expected": "PASS",
+    "observed": "FAIL",
+    "resource": "aws:iam:account"
+  },
+  {
+    "id": "cis-2.1",
+    "title": "Ensure S3 bucket default encryption (example)",
+    "category": "Storage",
+    "framework_tags": ["CIS", "HIPAA_164.312.e.1"],
+    "expected": "PASS",
+    "observed": "PASS",
+    "resource": "aws:s3:bucket:logs"
+  },
+  {
+    "id": "cis-3.1",
+    "title": "Ensure security groups restrict SSH (example)",
+    "category": "Network",
+    "framework_tags": ["CIS", "SOC2_CC6"],
+    "expected": "PASS",
+    "observed": "FAIL",
+    "resource": "aws:ec2:sg:web"
+  }
+]

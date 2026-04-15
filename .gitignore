@@ -1,0 +1,13 @@
+# Binaries
+/compliance
+*.exe
+*.test
+
+# Env
+.env
+.env.*
+
+# Go
+coverage.out
+*.coverprofile
+vendor/
